@@ -1,0 +1,148 @@
+@font-face {
+    font-family: BeautL;
+    src: url(./Assets/Fonts/68bf2d317447613b7363d623_BeautiqueDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: BeautM;
+    src: url(./Assets/Fonts/68bf2d3a549c0f3150c48f6a_BeautiqueDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: font01;
+    src: url(./Assets/Fonts/UcC53FwrK3iLTcvneQg7Ca725JhhKnNqk6L5UUM.woff2);
+}
+
+@font-face {
+    font-family: font02;
+    src: url(./Assets/Fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: BeautM;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    z-index: 9;
+}
+
+.lft-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.lft-nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.cntr-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+}
+
+.cntr-nav .links{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    border: 1px solid #ffffff79;
+    border-radius: 50px;
+}
+
+.links a{
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.links a:nth-child(4){
+     border: 1px solid #ffffff55;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.rght-nav{
+    width: 25%;
+    height: 100%;
+}
+
+/* main */
+main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#one{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #db6613;
+}
+
+#one img{
+    position: absolute;
+    width: 50vw;
+    mix-blend-mode: luminosity;
+    scale: 1.05;
+    z-index: 2;
+}
+
+#one .cirblur{
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    filter: blur(5rem);
+    background-color: #cecece33;
+}
+
+#one h1{
+    font-size: 15rem;
+    position: absolute;
+    text-align: center;
+    z-index: 0;
+    color: #fff;
+    font-family: BeautL;
+    font-weight: 400;
+    line-height: 0.5;
+    bottom: 20%;
+}
+#one h1 span{
+    font-size: 7rem;
+}
+#one p{
+    position: absolute;
+    bottom: 2%;
+    color: #fff;
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    font-size: 0px;
+}
+
+#two{
+    width: 100%;
+    height: 100vh;
+}
