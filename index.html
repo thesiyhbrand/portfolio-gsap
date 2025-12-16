@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.16/dist/lenis.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="mouse"></div>
+
     <nav>
-        <div class="lft-nav">
-            <a href="#">Veauly
-</a>
+      <div class="lft-nav">
+        <a href="#">Veauly </a>
+      </div>
+      <div class="cntr-nav">
+        <div class="links">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Services</a>
         </div>
-        <div class="cntr-nav">
-            <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
-                <a href="">Services</a>
-            </div>
-        </div>
+      </div>
 
-        <div class="rght-nav">
-
-        </div>
+      <div class="rght-nav"></div>
     </nav>
 
     <main>
-        <section id="one">
-            <img src="./Assets/Images/Amar.png" alt="">
-            <div class="cirblur">
-                
+      <section id="one">
+        <img src="./Assets/Images/Amar.png" alt="" />
+        <div class="cirblur"></div>
+        <h1>Creative <br /><span>Web Developer</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          accusamus repudiandae cupiditate dicta commodi esse.
+        </p>
+      </section>
+
+      <section id="two">
+        <div class="inner-two">
+          <h4>Profile</h4>
+          <div class="heading">
+            <div class="heading-back">
+              <h1>We transform bold ideas into</h1>
+              <h1>standout brands through strategy, design,</h1>
+              <h1>and marketing — all seamlessly integrated</h1>
             </div>
-            <h1>Creative <br><span>Web Developer</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur accusamus repudiandae cupiditate dicta commodi esse.</p>
-        </section>
+            <div class="heading-top">
+              <h1>We transform bold ideas into</h1>
+              <h1>standout brands through strategy, design,</h1>
+              <h1>and marketing — all seamlessly integrated</h1>
+            </div>
+          </div>
+          <div class="content-two">
+            <p>
+              From day one, our mission has been to craft timeless identities
+              that cut through the noise. Each year we collaborate with five
+              teams to ensure unrivaled attention and dedication
+            </p>
 
-        <section id="two">
+            <p>
+              For over a decade, we’ve partnered worldwide with founders to
+              shape bold identities that redefine markets.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <section id="three"></section>
     </main>
 
 
+    <script src="https://unpkg.com/lenis@1.3.16/dist/lenis.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
