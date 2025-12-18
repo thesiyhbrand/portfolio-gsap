@@ -85,6 +85,36 @@ document.addEventListener("DOMContentLoaded", (event) => {
         })
 
         
+        let tl3 = gsap.timeline({
+             scrollTrigger: {
+            trigger: "#three",
+            start: "10% 50%",
+            end: "60% 50%",
+            scrub: 1,
+            // markers: true
+        }
+        })
+
+        tl3.from(".img-three-2",{
+            marginLeft: "10vw",
+        },'tl3-1')
+        .from(".img-three-1",{
+            marginLeft: "-10vw", 
+        },'tl3-1')
+
+        let tl4 = gsap.timeline({
+             scrollTrigger: {
+            trigger: "#four",
+            start: "0% 70%",
+            end: "40% 90%",
+            scrub: 1,
+            // markers: true
+        }
+        })
+
+        tl4.to("#three",{
+            backgroundColor: "white"
+        })
 });
 
 

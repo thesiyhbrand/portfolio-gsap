@@ -222,7 +222,70 @@ main{
 
 #three{
     width: 100%;
-    height: 100vh;
+    height: 130vh;
+    overflow: hidden;
     background-color: black;
+}
+
+.three-top{
+    width: 100%;
+    height: 30vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   color: #fff;
+}
+
+.three-top h1{
+    font-size: 3.2vw;
+}
+
+.three-cntr{
+    display: flex;
+    align-items: center;
+    width: 130%;
+    height: 70vh;
+    /* background-color: #db6613; */
+}
+
+.img-three{
+    width: 50vw;
+    height: 100%;
+    background-image: url(https://cdn.prod.website-files.com/68bf26087df8b22fd8bdbedd/690cec8f0b2d5d6f89b739e7_pexels-mira-ilina-2151041927-34499716-p-2000.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-three-1{
+    margin-left: 30vw;
+} 
+
+.img-three-2{
+    background-image: url(https://cdn.prod.website-files.com/68bf26087df8b22fd8bdbedd/690cecdb7684b1b2205ef8f1_pexels-meum-mare-204165854-12639667.jpg);
+}
+
+.three-btm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+    width: 100%;
+    height: 30vh;
+    /* background-color: orange; */
+}
+
+.three-btm p{
+    width: 25%;
+    mix-blend-mode: difference;
+    color: #fff;
+}
+
+#four{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
 }
 
