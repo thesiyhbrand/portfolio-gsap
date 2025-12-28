@@ -77,44 +77,110 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
-        let mouse = document.querySelector(".mouse");
+    let mouse = document.querySelector(".mouse");
 
-        document.addEventListener("mousemove", (det)=>{
-            mouse.style.left = det.clientX + "px";
-            mouse.style.top = det.clientY + "px";
-        })
+    document.addEventListener("mousemove", (det) => {
+        mouse.style.left = det.clientX + "px";
+        mouse.style.top = det.clientY + "px";
+    })
 
-        
-        let tl3 = gsap.timeline({
-             scrollTrigger: {
+
+    let tl3 = gsap.timeline({
+        scrollTrigger: {
             trigger: "#three",
             start: "10% 50%",
             end: "60% 50%",
             scrub: 1,
             // markers: true
         }
-        })
+    })
 
-        tl3.from(".img-three-2",{
-            marginLeft: "10vw",
-        },'tl3-1')
-        .from(".img-three-1",{
-            marginLeft: "-10vw", 
-        },'tl3-1')
+    tl3.from(".img-three-2", {
+        marginLeft: "10vw",
+    }, 'tl3-1')
+        .from(".img-three-1", {
+            marginLeft: "-10vw",
+        }, 'tl3-1')
 
-        let tl4 = gsap.timeline({
-             scrollTrigger: {
+    let tl4 = gsap.timeline({
+        scrollTrigger: {
             trigger: "#four",
             start: "0% 70%",
             end: "40% 90%",
             scrub: 1,
             // markers: true
         }
+    })
+
+    tl4.to("#three", {
+        backgroundColor: "white"
+    })
+
+
+    let tl5 = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#four",
+            start: "10% 50%",
+            end: "100% 50%",
+            scrub: 1,
+            // markers: true
+        }
+    })
+    tl5.to("#four h1", {
+        xPercent: -80
+    }, 'tim21')
+        .from("#branding", {
+            x: 500,
+            opacity: 0
+        }, 'tim21')
+        .from("#design", {
+            x: 500,
+            opacity: 0
+        })
+        .from("#marketing", {
+            x: 500,
+            opacity: 0
         })
 
-        tl4.to("#three",{
-            backgroundColor: "white"
-        })
+    let tl6 = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#four",
+            start: "65% 50%",
+            end: "150% 50%",
+            // markers: true,
+            scrub: 1,
+            pin: true
+        }
+    })
+
+    tl6.to("#four", {
+        backgroundColor: "#000",
+        color: "#fff"
+    })
+
+    let tl7 = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#five",
+            start: "0% 80%",
+            end: "50% 50%",
+            markers: true,
+            scrub: 1,
+        }
+    })
+
+    tl7.from(".ccf1",{
+        x: 200,
+        opacity:0
+    })
+    .from(".ccf2",{
+         x: 200,
+        opacity:0
+    })
+    .from(".ccf3",{
+         x: 200,
+        opacity:0
+    })
+
 });
 
 
